@@ -1,0 +1,12 @@
+package RestAssured_Basics;
+
+import org.testng.annotations.Test;
+
+public class GetAllStudentsTest {
+  @Test
+  public void f() {
+	  
+	  
+	  
+  }
+}

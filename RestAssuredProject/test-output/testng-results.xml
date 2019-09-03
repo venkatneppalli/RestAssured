@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="2353" started-at="2019-09-02T13:42:43Z" finished-at="2019-09-02T13:42:46Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="2353" started-at="2019-09-02T13:42:43Z" finished-at="2019-09-02T13:42:46Z">
+      <class name="Module12_CurdOperations.GETReqTest">
+        <test-method status="PASS" signature="f()[pri:0, instance:Module12_CurdOperations.GETReqTest@3bfdc050]" name="f" duration-ms="2318" started-at="2019-09-02T13:42:43Z" finished-at="2019-09-02T13:42:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+      </class> <!-- Module12_CurdOperations.GETReqTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

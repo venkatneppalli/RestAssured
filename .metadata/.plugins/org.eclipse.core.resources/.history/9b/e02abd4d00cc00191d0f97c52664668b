@@ -1,0 +1,12 @@
+package Module14_ExtractRespJSON;
+
+import org.testng.annotations.Test;
+
+public class ExtractionExampTest {
+  @Test
+  public void f() {
+	  
+	  
+	  
+  }
+}

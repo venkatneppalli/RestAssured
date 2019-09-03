@@ -1,0 +1,13 @@
+package CreateJSONfilePOSTreq;
+
+import org.testng.annotations.Test;
+
+public class JsonOOPSTest {
+  
+  public void f() {
+	  
+	  
+	  
+	  
+  }
+}

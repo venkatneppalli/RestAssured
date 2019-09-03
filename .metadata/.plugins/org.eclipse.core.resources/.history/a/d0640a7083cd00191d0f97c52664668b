@@ -1,0 +1,19 @@
+package Module_14_MockAPI;
+
+import org.testng.annotations.Test;
+import static io.restassured.RestAssured.get;
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+
+public class mockAPITest {
+	
+  @Test
+  public void f() {
+	
+	  RestAssured.baseURI="http://polls.apiblueprint.org";
+	  RestAssured.basePath="/questions";
+	  Response resp = given().get();
+	  
+    	  
+  }
+}

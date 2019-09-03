@@ -1,0 +1,22 @@
+package CreateJSONfilePOSTreq;
+
+import org.testng.annotations.Test;
+
+public class JsonOOPSTest {
+
+	public String firstName;
+	public String lastName;
+	public String email;
+	public String programme;
+
+	public JsonOOPSTest(String firstName,String lastName,String email,String programme){
+		this.firstName=firstName;
+		this.lastName=lastName;
+		this.email=email;
+		this.programme=programme;
+	}
+	
+	public void f() {
+
+	}
+}

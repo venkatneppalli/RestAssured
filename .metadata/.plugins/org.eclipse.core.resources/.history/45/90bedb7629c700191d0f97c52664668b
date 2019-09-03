@@ -1,0 +1,35 @@
+package RestAssured_Basics;
+
+import org.testng.annotations.Test;
+
+import static io.restassured.RestAssured.given;
+import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+
+public class GetAllStudentsTest {
+  @Test
+  public void f() {
+	  
+	  RestAssured.baseURI="http://localhost";
+	  RestAssured.port=8080;
+	  RestAssured.basePath="/student/list";
+	  
+	  RequestSpecification req =given();
+	  
+	  req=req.contentType(ContentType.JSON);
+	  req=req.header("X","Y");
+	  
+	  Response response = req.get();
+	  
+	  System.out.println(response.contentType());
+	  System.out.println(response.headers());
+	  System.out.println(response.statusCode());
+	  System.out.println(response.getTime());
+	  
+	  
+	  //response.print();
+	  response.prettyPrint();
+  }
+}

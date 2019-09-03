@@ -1,0 +1,27 @@
+package Module14_ExtractRespJSON;
+
+import org.testng.annotations.Test;
+
+import static io.restassured.RestAssured.given;
+
+import java.util.List;
+
+import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
+
+public class BetterWayExtractTest {
+  @Test
+  public void f() {
+	  
+		RestAssured.baseURI = "http://localhost";
+		RestAssured.port = 8080;
+		RestAssured.basePath = "/student";
+
+		Response resp = given().contentType(ContentType.JSON).log().all().get("/list");
+		
+		List<Integer> list = resp.then().extract().path("/id");
+
+	  
+  }
+}

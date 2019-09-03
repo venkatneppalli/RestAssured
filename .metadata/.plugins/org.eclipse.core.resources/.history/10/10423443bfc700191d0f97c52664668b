@@ -1,0 +1,12 @@
+package CurdOperations;
+
+import org.testng.annotations.Test;
+
+public class PUTReqTest {
+  @Test
+  public void f() {
+	  
+	  
+	  
+  }
+}

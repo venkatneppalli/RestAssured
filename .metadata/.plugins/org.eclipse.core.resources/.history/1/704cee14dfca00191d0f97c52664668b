@@ -1,0 +1,9 @@
+package CreateJSONfilePOSTreq;
+
+import org.testng.annotations.Test;
+
+public class CreateJSONTest {
+  @Test
+  public void f() {
+  }
+}

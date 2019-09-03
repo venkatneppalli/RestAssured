@@ -1,0 +1,16 @@
+package LoginMethods;
+
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+
+public class LoggingMethods {
+  @Test
+  public void f() {
+	  
+	  RestAssured.baseURI="http://localhost";
+	  RestAssured.port=8080;
+	  RestAssured.basePath="/student";
+	  
+  }
+}

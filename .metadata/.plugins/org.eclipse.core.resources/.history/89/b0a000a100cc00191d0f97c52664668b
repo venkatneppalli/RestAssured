@@ -1,0 +1,19 @@
+package Module14_ExtractRespJSON;
+
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+
+public class ExtractionExampTest {
+ 
+	
+	
+  @Test
+  public void f() {
+	  
+	  RestAssured.baseURI="http://localhost";
+	  RestAssured.port=8080;
+	  RestAssured.basePath="/student";
+	  
+  }
+}

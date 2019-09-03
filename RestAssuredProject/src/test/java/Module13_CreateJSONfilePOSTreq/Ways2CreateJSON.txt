@@ -1,0 +1,5 @@
+3 Ways of creating JSON file
+
+1. JSON Object and JSON Array
+2. Using Java Collections
+3. Using Object Oriented Programming

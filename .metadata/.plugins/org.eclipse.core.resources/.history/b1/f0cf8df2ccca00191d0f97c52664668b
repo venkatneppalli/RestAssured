@@ -1,0 +1,20 @@
+package LoginMethods;
+
+import org.testng.annotations.Test;
+
+import static io.restassured.RestAssured.given;
+import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
+
+public class LoggingMethods {
+  @Test
+  public void f() {
+	  
+	  RestAssured.baseURI="http://localhost";
+	  RestAssured.port=8080;
+	  RestAssured.basePath="/student";
+	  
+	  Response resp = given().contentType(ContentType.JSON).log().all().get();
+	  
+  }
+}

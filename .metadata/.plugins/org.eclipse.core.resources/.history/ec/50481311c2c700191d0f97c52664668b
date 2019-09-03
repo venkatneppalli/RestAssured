@@ -1,0 +1,9 @@
+package CurdOperations;
+
+import org.testng.annotations.Test;
+
+public class DELETEReqTest {
+  @Test
+  public void f() {
+  }
+}

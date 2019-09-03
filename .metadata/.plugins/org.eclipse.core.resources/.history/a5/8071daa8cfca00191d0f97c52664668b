@@ -1,0 +1,44 @@
+package LoginMethods;
+
+import org.testng.annotations.Test;
+
+import static io.restassured.RestAssured.given;
+import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
+
+public class RequestLoggingMethods {
+	
+  @Test
+  public void f() {
+	  
+	  //loggingAll();
+	  loggingHeader();
+  }
+  
+  //Logging All
+  public void loggingAll(){
+	  RestAssured.baseURI="http://localhost";
+	  RestAssured.port=8080;
+	  RestAssured.basePath="/student";
+	  
+	  Response resp = given().contentType(ContentType.JSON).log().all().get("/100");
+	  
+	  resp.prettyPrint();
+  }
+  
+  //Logging Header part 
+  public void loggingHeader(){
+	  
+	  RestAssured.baseURI="http://localhost";
+	  RestAssured.port=8080;
+	  RestAssured.basePath="/student";
+	  
+	  Response resp = given().headers("X","Y").contentType(ContentType.JSON).log().headers().get("/100");
+	  
+	  resp.prettyPrint();
+	  
+  }
+  
+  
+}

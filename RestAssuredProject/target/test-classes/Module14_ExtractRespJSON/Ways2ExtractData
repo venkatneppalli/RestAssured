@@ -1,0 +1,5 @@
+There are two ways to extract json data
+
+1. RestAssured extract() method
+
+2. JSON class

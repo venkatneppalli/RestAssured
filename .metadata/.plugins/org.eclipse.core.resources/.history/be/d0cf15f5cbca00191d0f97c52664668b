@@ -1,0 +1,12 @@
+package LoginMethods;
+
+import org.testng.annotations.Test;
+
+public class LoggingMethods {
+  @Test
+  public void f() {
+	  
+	  
+	  
+  }
+}

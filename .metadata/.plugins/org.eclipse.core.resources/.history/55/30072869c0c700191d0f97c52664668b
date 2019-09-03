@@ -1,0 +1,19 @@
+package CurdOperations;
+
+import static io.restassured.RestAssured.given;
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
+
+public class GETspecificIDTest {
+  @Test
+  public void f() {
+	  
+	  RestAssured.baseURI="";
+	  RestAssured.port=8080;
+	  RestAssured.basePath="";
+	  
+	  Response resp=given().contentType(ContentType.JSON).log().all().get();
+  }
+}

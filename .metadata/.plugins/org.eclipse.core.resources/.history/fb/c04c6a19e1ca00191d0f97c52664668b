@@ -1,0 +1,20 @@
+package CreateJSONfilePOSTreq;
+
+import org.testng.annotations.Test;
+import org.json.JSONObject;
+
+public class CreateJSONTest {
+  
+	
+
+  @Test
+  public void jsonobject_jsonarray() {
+	
+	  
+	  JSONObject obj = new JSONObject();
+	  obj.put("firstName", "Kalyan");
+	  obj.put("lastName", "Malik");
+	  
+	  
+  }
+}

@@ -1,0 +1,40 @@
+package CreateJSONfilePOSTreq;
+
+import org.testng.annotations.Test;
+
+import static io.restassured.RestAssured.given;;
+import io.restassured.RestAssured;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+public class CreateJSONTest {
+  
+	
+
+  @Test
+  public void jsonobject_jsonarray() {
+	
+	  RestAssured.baseURI="http://localhost";
+	  RestAssured.port=8080;
+	  RestAssured.basePath="/student";
+	  
+	  JSONObject obj = new JSONObject();
+	  obj.put("firstName", "Kalyan");
+	  obj.put("lastName", "Malik");
+	  obj.put("email", "kalyanmalik@gmail.com");
+	  obj.put("programmer", "Computer Science");
+	  
+	  JSONArray arr = new JSONArray();
+	  arr.put("c");
+	  arr.put("c++");
+	  arr.put("java");
+	  
+	  System.out.println(obj.put("course", arr));
+	  
+	  Response resp=given().
+	  
+	  
+	  
+  }
+}

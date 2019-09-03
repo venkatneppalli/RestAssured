@@ -1,0 +1,18 @@
+package Module_14_MockAPI;
+
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+
+public class mockAPITest {
+	
+  @Test
+  public void f() {
+	
+	  RestAssured.baseURI="";
+	  RestAssured.basePath="";
+	  
+	  
+    	  
+  }
+}
